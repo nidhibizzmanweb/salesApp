@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/topSec"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:background="@color/purple_500">
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/ic_material_symbols_select_check_box"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/imgTop"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/secondSec"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_below="@+id/topSec">
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardPreventCornerOverlap="true"
+            android:layout_centerVertical="true"
+            app:cardMaxElevation="@dimen/_8sdp"
+            app:cardElevation="@dimen/_4sdp">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/LabelSec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_15sdp">
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            style="@style/customEditText"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/edit_rectangle"
+                            android:drawableStart="@drawable/ic_email"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:hint="Username/Email"/>
+
+                        <EditText
+                            android:id="@+id/etPassword"
+                            style="@style/customEditText"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/edit_rectangle"
+                            android:drawableStart="@drawable/ic_carbon_password"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:drawablePadding="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:hint="Password"/>
+
+                        <TextView
+                            android:id="@+id/tvForgetPass"
+                            style="@style/tvRegular"
+                            android:layout_marginVertical="@dimen/_18sdp"
+                            android:text="@string/forgot_password"/>
+
+                        <TextView
+                            android:id="@+id/tvLogin"
+                            style="@style/customButton"
+                            android:textColor="@color/white"
+                            android:layout_width="@dimen/_90sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:layout_marginVertical="@dimen/_12sdp"
+                            android:background="@drawable/edit_rectangle"
+                            android:backgroundTint="@color/purple_500"
+                            android:text="@string/login"
+                            android:layout_gravity="center"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MySalesTrackApp</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="description_text">Enter the 4-digit code sent to you at  +91 12345 56789. <font color="#0658D0">did you enter the correct number?</font> </string>
+    <string name="didn_t_receive_the_otp_resend_otp">Didn\'t receive the OTP? <font color="#0658D0">RESEND OTP</font></string>
+    <string name="verify">Verify</string>
+    <string name="we_sent_an_code_to_verify_your_phone">We Sent an code to verify your Phone</string>
+    <string name="mr_reporting">MR Reporting</string>
+    <string name="welcome_ansarul_sales_executive">Welcome, Ansarul (Sales Executive)</string>
+    <string name="gps">GPS</string>
+    <string name="target_amp_achievement"><![CDATA[Target & Achievement]]></string>
+    <string name="view">View</string>
+    <string name="opportunity">Opportunity:</string>
+    <string name="add_new_schedule">Add New Schedule</string>
+</resources>

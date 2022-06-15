@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_12sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/grey_stroke_color">
+
+    <ImageView
+        android:id="@+id/imgPerson"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/ic_person"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/tvBold"
+        android:text="Dr. ABHISHEK (MBBS)"
+        android:textSize="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_toEndOf="@+id/imgPerson"
+        android:textColor="@color/black" />
+
+    <TextView
+        style="@style/tvSemiBold"
+        android:text="Ticket no. MR0001"
+        android:textSize="@dimen/_8sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imgMap"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        app:tint="@color/purple_200"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/imgPerson"
+        android:src="@drawable/ic_bxs_map"/>
+
+    <TextView
+        android:id="@+id/tvLocation"
+        style="@style/tvSemiBold"
+        android:layout_below="@+id/imgPerson"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_toEndOf="@+id/imgMap"
+        android:text="GANGAPUR CITY - hswh g"
+        android:textColor="@color/heading_color"
+        android:textSize="@dimen/_11sdp" />
+
+
+    <TextView
+        android:id="@+id/tvOpportunity"
+        style="@style/tvBold"
+        android:text="@string/opportunity"
+        android:textSize="@dimen/_11sdp"
+        android:layout_below="@+id/imgMap"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColor="@color/heading_color" />
+
+    <TextView
+        style="@style/tvRegular"
+        android:text="(Ent, Ortho, Cardio)"
+        android:textSize="@dimen/_11sdp"
+        android:layout_below="@+id/imgMap"
+        android:layout_toEndOf="@+id/tvOpportunity"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textColor="@color/heading_color"/>
+
+
+    <ImageView
+        android:id="@+id/tvCake"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_below="@+id/tvOpportunity"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@drawable/ic_birthday_cake"
+        app:tint="@color/purple_200" />
+
+    <TextView
+        style="@style/tvRegular"
+        android:layout_below="@+id/tvOpportunity"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_toEndOf="@+id/tvCake"
+        android:text="07 Dec 2022"
+        android:textColor="@color/heading_color"
+        android:textSize="@dimen/_11sdp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOpportunity"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:tint="@color/purple_200"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/ic_call"/>
+
+        <TextView
+            style="@style/tvRegular"
+            android:layout_below="@+id/tvOpportunity"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="554512451256"
+            android:textColor="@color/heading_color"
+            android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOpen"
+        style="@style/tvRegular"
+        android:text="Open"
+        android:gravity="center"
+        android:textSize="@dimen/_9sdp"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_4sdp"
+        android:layout_below="@+id/tvCake"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/grey_stroke_color"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCake"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvRegular"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="Status"
+            android:textColor="@color/heading_color"
+            android:textSize="@dimen/_8sdp" />
+
+        <TextView
+            style="@style/tvRegular"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="Close"
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/_8sdp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
