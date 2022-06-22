@@ -14,4 +14,41 @@
     <string name="view">View</string>
     <string name="opportunity">Opportunity:</string>
     <string name="add_new_schedule">Add New Schedule</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="client_name">Client Name</string>
+    <string name="role">Role</string>
+    <string name="e_mail">E-mail</string>
+    <string name="location">Location</string>
+    <string name="status">Status</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="item_categories">Item Categories</string>
+    <string name="item_name">Item Name</string>
+    <string name="uom">UOM</string>
+    <string name="planDescription">On clicking save next record will come to fill item details. All will save as sales quotation</string>
+    <string name="send_by_email">Send by Email</string>
+    <string name="save_exit"><![CDATA[Save & Exit]]></string>
+    <string name="expense_report">Expense Report</string>
+    <string name="ticket_no">Ticket no.</string>
+    <string name="target_vs_acheivement">Target Vs Acheivement</string>
+    <string name="totals">Totals</string>
+    <string name="tget_amt">Tget Amt</string>
+    <string name="actual_amt">Actual Amt</string>
+    <string name="diff_amt">Diff Amt</string>
+    <string name="visit_missed_details">Visit / Missed Details</string>
+    <string name="visited_doctor">Visited Doctor</string>
+    <string name="call_average">Call Average</string>
+    <string name="doctor">Doctor</string>
+    <string name="target_achievement"><![CDATA[Target & Achievement]]></string>
+    <string name="tour_program_status">Tour Program Status</string>
+    <string name="submitted">Submitted</string>
+    <string name="approved">Approved</string>
+    <string name="pending_doctor">Pending Doctor</string>
+    <string name="visited_chem_sdk">Visited Chem / Sdk</string>
+    <string name="salesman">Salesman :</string>
+
+
+    <string-array name="roleArray">
+        <item>Doctor</item>
+        <item>Sales</item>
+    </string-array>
 </resources>

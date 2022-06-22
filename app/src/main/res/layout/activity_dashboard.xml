@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbarSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:background="@color/purple_200">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            style="@style/tvBold"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/backArrow"
+            android:textSize="@dimen/_13sdp"
+            android:text="Dashboard - Jan 2021"/>
+
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_home_line" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarSec">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/filterSec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_10sdp"
+                android:background="@color/white"
+                android:layout_below="@+id/toolbarSec"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:background="@drawable/grey_stroke_color"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/tvRegular"
+                        android:text="2021"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_arrow_down"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:background="@drawable/grey_stroke_color"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/tvRegular"
+                        android:text="Date"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_arrow_down"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:backgroundTint="@color/purple_200"
+                    android:background="@drawable/grey_stroke_color"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/tvRegular"
+                        android:text="@string/view"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/headingSec"
+                    style="@style/tvSemiBold"
+                    android:textColor="@color/heading_two"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:text="@string/visit_missed_details"/>
+
+                <LinearLayout
+                    android:id="@+id/firstSec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headingSec"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:id="@+id/visitedDoctor"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/purple_500"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/tvBold"
+                                    android:text="9"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/white"/>
+
+                                <TextView
+                                    style="@style/tvSemiBold"
+                                    android:text="@string/visited_doctor"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/purple_500"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/tvBold"
+                                    android:text="72"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/white"/>
+
+                                <TextView
+                                    style="@style/tvSemiBold"
+                                    android:text="@string/pending_doctor"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstSec"
+                    android:layout_marginBottom="@dimen/_18sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/purple_500"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/tvBold"
+                                    android:text="5"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/white"/>
+
+                                <TextView
+                                    style="@style/tvSemiBold"
+                                    android:text="@string/visited_chem_sdk"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/purple_500"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/tvBold"
+                                    android:text="5"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/white"/>
+
+                                <TextView
+                                    style="@style/tvSemiBold"
+                                    android:text="Missed Chem / Sdk"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/light_grey_three"
+                app:cardCornerRadius="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_18sdp"
+                    android:paddingBottom="@dimen/_25sdp"
+                    android:paddingHorizontal="@dimen/_8sdp">
+
+                    <TextView
+                        android:id="@+id/tvCallAvg"
+                        style="@style/tvSemiBold"
+                        android:text="@string/call_average"
+                        android:textColor="@color/heading_two" />
+
+                    <LinearLayout
+                        android:id="@+id/progressChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvCallAvg"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:orientation="vertical"
+                            android:layout_height="@dimen/_140sdp">
+
+                            <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:paddingHorizontal="@dimen/_10sdp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+
+                                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                    android:id="@+id/circularProgressFirst"
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="@dimen/_80sdp"
+                                    android:layout_centerInParent="true"
+                                    app:cpb_background_progressbar_color="@color/progress_color"
+                                    app:cpb_background_progressbar_width="8dp"
+                                    app:cpb_progress="30"
+                                    app:cpb_progress_direction="to_right"
+                                    app:cpb_progress_max="100"
+                                    app:cpb_progressbar_color="@color/purple_200"
+                                    app:cpb_progressbar_width="8dp"
+                                    app:cpb_round_border="false" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        style="@style/tvBold"
+                                        android:text="1.7"
+                                        android:layout_gravity="center"
+                                        android:textSize="@dimen/_11sdp"
+                                        android:textColor="@color/black"/>
+
+                                    <TextView
+                                        style="@style/tvRegular"
+                                        android:text="@string/doctor"
+                                        android:layout_gravity="center"
+                                        android:textSize="@dimen/_9sdp"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:textColor="@color/black"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:paddingVertical="@dimen/_10sdp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="@dimen/_10sdp"
+                                        android:background="@color/purple_200"/>
+
+                                    <TextView
+                                        style="@style/tvRegular"
+                                        android:text="MEF:0.0"
+                                        android:textSize="@dimen/_7sdp"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:textColor="@color/black"/>
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_10sdp"
+                                        android:layout_height="@dimen/_10sdp"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:background="@color/purple_500"/>
+
+                                    <TextView
+                                        style="@style/tvRegular"
+                                        android:text="NON-MEF:0.0"
+                                        android:textSize="@dimen/_7sdp"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:textColor="@color/black"/>
+
+                                </LinearLayout>
+
+                                </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/_140sdp">
+
+                              <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:paddingHorizontal="@dimen/_10sdp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                  <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                                      android:id="@+id/circularProgressBar"
+                                      android:layout_width="@dimen/_120sdp"
+                                      android:layout_height="@dimen/_120sdp"
+                                      android:layout_centerInParent="true"
+                                      app:cpb_background_progressbar_color="@color/progress_color"
+                                      app:cpb_background_progressbar_width="8dp"
+                                      app:cpb_progress="30"
+                                      app:cpb_progress_direction="to_right"
+                                      app:cpb_progress_max="100"
+                                      app:cpb_progressbar_color="@color/purple_200"
+                                      app:cpb_progressbar_width="8dp"
+                                      app:cpb_round_border="false" />
+
+                                  <LinearLayout
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_centerInParent="true"
+                                      android:orientation="vertical">
+
+                                      <TextView
+                                          style="@style/tvBold"
+                                          android:layout_gravity="center"
+                                          android:text="0.7"
+                                          android:textColor="@color/black"
+                                          android:textSize="@dimen/_11sdp" />
+
+                                      <TextView
+                                          style="@style/tvSemiBold"
+                                          android:layout_gravity="center"
+                                          android:layout_marginTop="@dimen/_5sdp"
+                                          android:text="Chem / Stk"
+                                          android:textColor="@color/black"
+                                          android:textSize="@dimen/_9sdp" />
+
+
+                                  </LinearLayout>
+
+                                </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_below="@+id/progressChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingVertical="@dimen/_18sdp"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTargetHeading"
+                                style="@style/tvSemiBold"
+                                android:text="@string/target_achievement"
+                                android:textColor="@color/heading_two" />
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/tvTargetHeading"
+                                android:layout_marginVertical="@dimen/_15sdp"
+                                android:orientation="vertical">
+
+                                <!--  <com.ramijemli.percentagechartview.PercentageChartView
+                                      android:id="@+id/percentageChart"
+                                      android:layout_width="@dimen/_100sdp"
+                                      android:layout_height="@dimen/_100sdp"
+                                      app:pcv_mode="pie"
+                                      app:pcv_orientation="counter_clockwise"
+                                      app:pcv_animDuration="800"
+                                      android:layout_marginTop="@dimen/_30sdp"
+                                      app:pcv_animInterpolator="anticipate_overshoot"
+                                      app:pcv_progress="10"
+                                      app:pcv_startAngle="270"/>-->
+
+                                <ImageView
+                                    android:id="@+id/imgPieChart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/pie_chart"/>
+
+                                <TextView
+                                    style="@style/tvBold"
+                                    android:layout_alignEnd="@+id/imgPieChart"
+                                    android:layout_marginTop="@dimen/_60sdp"
+                                    android:layout_marginEnd="@dimen/_33sdp"
+                                    android:text="15%"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_20sdp" />
+
+                                <TextView
+                                    style="@style/tvBold"
+                                    android:textColor="@color/white"
+                                    android:layout_marginTop="@dimen/_110sdp"
+                                    android:layout_marginStart="@dimen/_35sdp"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:text="85%"/>
+
+                            </RelativeLayout>
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvSemiBold"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:text="@string/tour_program_status"
+                    android:textColor="@color/heading_two" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/purple_500"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/tvRegular"
+                                    android:text="YES"
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    android:drawableEnd="@drawable/ic_baseline_check_24"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/white"/>
+
+                                <TextView
+                                    style="@style/tvSemiBold"
+                                    android:text="@string/submitted"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="@dimen/_6sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/purple_500"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/_10sdp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/tvRegular"
+                                    android:text="YES"
+                                    android:drawablePadding="@dimen/_5sdp"
+                                    android:drawableEnd="@drawable/ic_baseline_check_24"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/white"/>
+
+                                <TextView
+                                    style="@style/tvSemiBold"
+                                    android:text="@string/approved"
+                                    android:layout_gravity="center"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:textColor="@color/white"/>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

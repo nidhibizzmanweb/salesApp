@@ -58,4 +58,12 @@ dependencies {
 
     // otp
     implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
+
+    // progress bar
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+
+    // pie chart view
+    implementation 'com.ramijemli.percentagechartview:percentagechartview:0.3.1'
+
+
 }

@@ -1,6 +1,7 @@
 package com.example.mysalestrackapp.activities
 
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -22,20 +23,9 @@ class ForgetPasswordActivity : AppCompatActivity() {
             onBackPressed()
         }
         verifyButton.setOnClickListener {
-            showVerifyPopUp()
+            startActivity(Intent(this,LoginActivity::class.java))
+            finish()
         }
     }
 
-    private fun showVerifyPopUp() {
-        var dialog = Dialog(this)
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialog.setCancelable(true)
-        dialog.setContentView(R.layout.verification_code_layout)
-
-
-        dialog.show()
-        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
-
-
-    }
 }

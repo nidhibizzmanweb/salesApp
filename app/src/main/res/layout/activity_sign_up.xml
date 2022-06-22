@@ -133,6 +133,7 @@
 
 
                     <TextView
+                        android:id="@+id/signUpBut"
                         style="@style/customButton"
                         android:layout_width="@dimen/_90sdp"
                         android:layout_gravity="center"

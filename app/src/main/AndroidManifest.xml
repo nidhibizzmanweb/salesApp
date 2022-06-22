@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySalesTrackApp">
         <activity
+            android:name=".activities.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TargetAchievementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyPlanTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.VisitDoctorActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.MyPlanActivity"
             android:exported="false" />
         <activity
@@ -23,6 +38,9 @@
             android:exported="false" />
         <activity
             android:name=".activities.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.VerificationActivity"
             android:exported="false" />
         <activity
             android:name=".activities.SplashActivity"
