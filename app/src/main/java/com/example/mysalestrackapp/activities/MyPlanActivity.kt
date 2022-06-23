@@ -48,8 +48,8 @@ class MyPlanActivity : AppCompatActivity() {
         home_icon.setOnClickListener {
             onBackPressed()
         }
-        locImage.setOnClickListener {
-            startActivity(Intent(this,MyPlanTwoActivity::class.java))
-        }
+//        locImage.setOnClickListener {
+//            startActivity(Intent(this,MyPlanTwoActivity::class.java))
+//        }
     }
 }

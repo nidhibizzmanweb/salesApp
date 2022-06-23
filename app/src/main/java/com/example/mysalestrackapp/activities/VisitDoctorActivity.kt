@@ -1,10 +1,13 @@
 package com.example.mysalestrackapp.activities
 
+
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mysalestrackapp.R
 import com.example.mysalestrackapp.adapters.PlanAdapter
 import kotlinx.android.synthetic.main.activity_visit_doctor.*
+
 
 class VisitDoctorActivity : AppCompatActivity() {
 
@@ -30,6 +33,9 @@ class VisitDoctorActivity : AppCompatActivity() {
         }
         home_icon.setOnClickListener {
             onBackPressed()
+        }
+        bottomSec.setOnClickListener {
+           startActivity(Intent(this,MyPlanTwoActivity::class.java))
         }
     }
 }
