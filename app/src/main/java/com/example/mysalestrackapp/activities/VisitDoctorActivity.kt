@@ -34,8 +34,8 @@ class VisitDoctorActivity : AppCompatActivity() {
         home_icon.setOnClickListener {
             onBackPressed()
         }
-        bottomSec.setOnClickListener {
-           startActivity(Intent(this,MyPlanTwoActivity::class.java))
-        }
+//        bottomSec.setOnClickListener {
+//           startActivity(Intent(this,MyPlanTwoActivity::class.java))
+//        }
     }
 }

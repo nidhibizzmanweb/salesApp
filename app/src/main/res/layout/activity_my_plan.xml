@@ -8,8 +8,8 @@
         android:id="@+id/toolbarSec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_12sdp"
-        android:background="@color/purple_200">
+        android:background="@color/purple_200"
+        android:padding="@dimen/_12sdp">
 
         <ImageView
             android:id="@+id/backArrow"
@@ -19,11 +19,11 @@
 
         <TextView
             style="@style/tvBold"
-            android:textColor="@color/white"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_toEndOf="@+id/backArrow"
-            android:textSize="@dimen/_13sdp"
-            android:text="My Plan - Jan 2021"/>
+            android:text="Plan Details - Jan 2021"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
 
 
         <ImageView

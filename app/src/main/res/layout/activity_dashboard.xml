@@ -344,10 +344,12 @@
                     <TextView
                         android:id="@+id/tvCallAvg"
                         style="@style/tvSemiBold"
+                        android:visibility="gone"
                         android:text="@string/call_average"
                         android:textColor="@color/heading_two" />
 
                     <LinearLayout
+                        android:visibility="gone"
                         android:id="@+id/progressChart"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -597,6 +599,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:paddingVertical="@dimen/_10sdp"
                 android:orientation="vertical">

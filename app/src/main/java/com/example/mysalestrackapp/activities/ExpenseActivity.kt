@@ -26,5 +26,8 @@ class ExpenseActivity : AppCompatActivity() {
         backArrow.setOnClickListener {
             onBackPressed()
         }
+        home_icon.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

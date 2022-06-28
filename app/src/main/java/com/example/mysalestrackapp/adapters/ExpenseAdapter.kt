@@ -1,11 +1,14 @@
 package com.example.mysalestrackapp.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mysalestrackapp.R
+import com.example.mysalestrackapp.activities.MyPlanTwoActivity
+import kotlinx.android.synthetic.main.items_expense.view.*
 
 class ExpenseAdapter(var context : Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -17,6 +20,9 @@ class ExpenseAdapter(var context : Context) : RecyclerView.Adapter<RecyclerView.
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        holder.itemView.tvOpen.setOnClickListener {
+            context.startActivity(Intent(context,MyPlanTwoActivity::class.java))
+        }
 
     }
 

@@ -20,9 +20,10 @@ class DashboardActivity : AppCompatActivity() {
         backArrow.setOnClickListener {
             onBackPressed()
         }
-        visitedDoctor.setOnClickListener {
-            startActivity(Intent(this,VisitDoctorActivity::class.java))
+        home_icon.setOnClickListener {
+            onBackPressed()
         }
+
     }
 
 }

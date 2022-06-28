@@ -57,20 +57,16 @@
     <TextView
         android:id="@+id/tvOpen"
         style="@style/tvRegular"
-        android:text="Open"
-        android:gravity="center"
+        android:layout_below="@+id/imgMap"
         android:layout_alignParentEnd="true"
-        android:textSize="@dimen/_9sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/grey_stroke_color"
+        android:backgroundTint="@color/purple_200"
+        android:gravity="center"
         android:paddingHorizontal="@dimen/_8sdp"
         android:paddingVertical="@dimen/_4sdp"
-        android:layout_below="@+id/imgMap"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:backgroundTint="@color/purple_200"
-        android:background="@drawable/grey_stroke_color"
-        android:textColor="@color/white"/>
-
-
-
-
+        android:text="Open"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
 
 </RelativeLayout>
